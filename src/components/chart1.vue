@@ -42,6 +42,9 @@ export default {
           trigger: 'axis',
           axisPointer: {
             type: 'cross'
+          },
+          textStyle: {
+            align: 'left'
           }
         },
         grid: {
@@ -105,18 +108,18 @@ export default {
         ],
         series: [
           {
-            name: 'diggCount',
+            name: '点赞数',
             type: 'bar',
             data: yData2
           },
           {
-            name: 'hotRankScore',
+            name: '热度指数',
             type: 'bar',
             yAxisIndex: 1,
             data: yData3
           },
           {
-            name: 'fansCount',
+            name: '粉丝数',
             type: 'line',
             yAxisIndex: 2,
             data: yData1
